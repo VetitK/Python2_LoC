@@ -8,7 +8,7 @@ def product(d, *args):
 
 # print(product(2, 4, 5))
 
-def greetings(**kwargs):
+def greetings(name: str ='Vetit',**kwargs):
     # name, nationality
     print(
         f"Hello, my name is {kwargs['name']}, I am {kwargs['nationality']}. I am {kwargs['age']} years old.")
@@ -16,8 +16,8 @@ def greetings(**kwargs):
         print(f'ห้องน้ำอยู่ไหน')
 
 
-# greetings(name="Vetit", nationality="SmurfMartian",
-#           age=20, สันดาน="Lawful Evil", isJebKhee=False)
+greetings(name="Vetit", nationality="SmurfMartian",
+          age=20, สันดาน="Lawful Evil", isJebKhee=False)
 
 def _sum(a, b, *args, w=4, y=5, **kwargs):
     return a + b + args[0] + args[-1] + w + y + kwargs['z']
